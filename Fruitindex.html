@@ -20,18 +20,19 @@
                 <span class="close" id="close">&times;</span>
                 <h2>Upload Picture</h2>
                 <button class="add-btn" id="add-btn">Use Camera</button>
-                <button class="browse-btn" id="browse-btn">Browse from Files</button>
+                <input type="file" id="file-input" style="display: none;">
+                <button class="browse-btn" id="browse-btn" onclick="uploadFile()">Browse from Files</button>
             </div>
         </div>
-
+        
         <div id="uploaded-picture" style="display: none;">
             <h2>Uploaded Picture</h2>
             <p id="selected-file">Selected File: <span></span></p>
-            <input type="file" id="file-input" style="display: none;">
             <button class="upload-btn" id="upload-btn">Upload</button>
         </div>
     </main>
     
     <script src="Fruitscript.js"></script>
+    <!-- <script src="upload.js"></script> -->
 </body>
 </html>
