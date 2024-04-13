@@ -27,7 +27,7 @@
         input[type="file"] {
             display: none;
         }
-        .upload-btn {
+        .output-btn {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
@@ -36,7 +36,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        .upload-btn:hover {
+        .output-btn:hover {
             background-color: #45a049;
         }
     </style>
@@ -48,7 +48,12 @@
         <p>Selected File: <span id="selected-file"></span></p>
         <input type="file" id="file-input">
         <br>
-        <button class="upload-btn" id="upload-btn">Upload</button>
+        <!--button class="upload-btn" id="upload-btn">Upload</button>a-->
+        <button class="output-btn" id="output-btn">Output</button>
+        
+
+
+
     </div>
 
     <script>
@@ -58,11 +63,11 @@
             document.getElementById('selected-option').innerText = selectedOption;
 
             const fileInput = document.getElementById("file-input");
-            const uploadBtn = document.getElementById("upload-btn");
+            const OutputBtn = document.getElementById("output-btn");
 
             // Handle upload button click
-            uploadBtn.addEventListener("click", function() {
-                fileInput.click();
+            OutputBtn.addEventListener("click", function() {
+                window.location.href = 'output.html';
             });
 
             // Handle file input change
@@ -74,3 +79,4 @@
     </script>
 </body>
 </html>
+
