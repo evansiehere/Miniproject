@@ -1,3 +1,4 @@
+alert("I am evana");
 // JavaScript to handle preloader and transitions
 window.addEventListener("load", function() {
     document.getElementById("preloader").style.display = "none";
@@ -26,9 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "upload.html?option=UseCamera";
     });
 
-    browseBtn.addEventListener("click", function() {
-        // Redirect to another page with the option in the query string
-        window.location.href = "upload.html?option=BrowseFiles";
-    });
+    
 });
 
+const fileInput = document.getElementById("file-input");
+function uploadFile()
+    {
+        // alert('Upload');
+        fileInput.click();
+    }
+
+
+    fileInput.addEventListener("change", function() {
+        document.getElementById('selected-file').innerText = this.files[0].name;
+     });
