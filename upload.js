@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Check if a file is selected
         if (this.files && this.files.length > 0) {
             // Redirect to upload.html with the selected option in the query string
-            window.location.href = "upload.html?option=BrowseFromFiles";
+            window.location.href ="upload.html?option=BrowseFromFiles" ;
         }
     });
 });
