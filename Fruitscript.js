@@ -35,6 +35,7 @@ function uploadFile()
     {
         // alert('Upload');
         fileInput.click();
+         window.location.href = "upload.html?option=Browse-from-Files";
     }
 
 
