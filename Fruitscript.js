@@ -35,10 +35,11 @@ function uploadFile()
     {
         // alert('Upload');
         fileInput.click();
-         window.location.href = "upload.html?option=Browse-from-Files";
+        window.location.href = "upload.html?option=Browse-from-Files";
     }
 
 
     fileInput.addEventListener("change", function() {
         document.getElementById('selected-file').innerText = this.files[0].name;
      });
+
