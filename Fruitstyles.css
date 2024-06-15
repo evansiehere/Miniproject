@@ -143,6 +143,17 @@
     text-decoration: none;
     cursor: pointer;
 }
+#camera-section {
+    display: none;
+    text-align: center;
+}
+
+video {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 .output-window {
     display: none;
