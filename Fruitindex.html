@@ -24,6 +24,12 @@
                 <button class="browse-btn" id="browse-btn" onclick="uploadFile()">Browse from Files</button>
             </div>
         </div>
+        <div id="camera-section" style="display: none;">
+            <h2>Camera</h2>
+            <video id="video" width="640" height="480" autoplay></video>
+            <button class="capture-btn" id="capture-btn">Capture</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
         
         <div id="uploaded-picture" style="display: none;">
             <h2>Uploaded Picture</h2>
