@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('selected-option').innerText = selectedOption;
 
     const fileInput = document.getElementById("file-input");
+    document.addEventListener("DOMContentLoaded", function() {
+        const fileInput = document.getElementById("file-input");
+        const selectedFileSpan = document.getElementById("selected-file").querySelector("span");
+    
+        // Handle file input change
+        fileInput.addEventListener("change", function() {
+            selectedFileSpan.textContent = this.files[0].name;
+            document.getElementById("uploaded-picture").style.display = "block";
+        });
+    });
+    
 
     // Handle file input change
     fileInput.addEventListener("change", function() {
@@ -14,3 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
